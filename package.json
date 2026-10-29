@@ -1,0 +1,9 @@
+{
+  "name": "campfire-twitch-overlay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {"dev":"tsx watch src/server.ts", "dev:demo":"npm run seed && npm run dev", "build":"tsc && node scripts/copy-schema.mjs", "start":"node dist/src/server.js", "typecheck":"tsc --noEmit", "lint":"eslint .", "test":"vitest run", "seed":"tsx scripts/seed.ts"},
+  "dependencies": {"@fastify/cookie":"^11.0.2", "@fastify/rate-limit":"^10.2.1", "@fastify/session":"^11.1.0", "better-sqlite3":"^12.2.0", "dotenv":"^16.6.1", "fastify":"^5.4.0", "nanoid":"^5.1.5", "sharp":"^0.34.2", "ws":"^8.18.3"},
+  "devDependencies": {"@types/better-sqlite3":"^7.6.13", "@types/node":"^22.15.30", "@types/ws":"^8.18.1", "@typescript-eslint/parser":"^8.35.1", "eslint":"^9.29.0", "tsx":"^4.19.4", "typescript":"^5.8.3", "vitest":"^3.2.4"}
+}
